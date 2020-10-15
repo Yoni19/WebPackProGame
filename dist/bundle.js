@@ -1800,7 +1800,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"weekOrAll\", function() { return weekOrAll; });\nvar weekOrAll = function weekOrAll() {\n  var selection = document.getElementById(\"selection\");\n  selection.innerHTML = \"\\n      <a class=\\\"btn\\\" href=\\\"#games/this-week\\\">\\n        <button class=\\\"btn btn_input\\\">Les mieux not\\xE9 cette semaine </button>\\n      </a>\\n      <a class=\\\"btn\\\" href=\\\"#games/all-time-best\\\">\\n        <button class=\\\"btn btn_input\\\">Les mieux not\\xE9 jusqu'a aujourd'hui</button>\\n      </a>\\n    \";\n};\n\n\n\n//# sourceURL=webpack:///./src/js/selection.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"weekOrAll\", function() { return weekOrAll; });\nvar weekOrAll = function weekOrAll() {\n  var selection = document.getElementById(\"selection\");\n  selection.innerHTML = \"\\n      <a class=\\\"btn\\\" href=\\\"#games/this-week\\\">\\n        <button class=\\\"btn btn_input\\\">Les mieux not\\xE9s cette semaine </button>\\n      </a>\\n      <a class=\\\"btn\\\" href=\\\"#games/all-time-best\\\">\\n        <button class=\\\"btn btn_input\\\">Les mieux not\\xE9s jusqu'\\xE0 aujourd'hui</button>\\n      </a>\\n    \";\n};\n\n\n\n//# sourceURL=webpack:///./src/js/selection.js?");
 
 /***/ }),
 
