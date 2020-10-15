@@ -1,0 +1,20 @@
+@import "./variable";
+@import "./color";
+
+
+
+#selectdiv {
+   color: wheat; 
+   height: 100%;
+   width: 100%;
+   
+   a.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button{
+        width: 300px;
+        background-color: principal_color;
+   }
+ }
+}

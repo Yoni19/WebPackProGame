@@ -44,8 +44,6 @@ const Filter = (thisWeekArgument, orderByRating) => {
         actionFilter(thisWeekArgument, orderByRating);
       });
     })
-    .catch((error) => {
-      handleException(error);
-    });
+
 };
 export{Filter};

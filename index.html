@@ -1,23 +1,34 @@
 <!DOCTYPE html>
 <html>
+  <div id="cursor-custom"></div>
   <head>
-    <title>Bienvenue sur ProGame</title>
+    <title>🎮 ProGame 🎮 </title>
     <link rel="stylesheet" href="dist/bundle.css" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    
   </head>
 
-  <body>
-  
+<header>
 
-      <form class="form-inline my-2 my-lg-0">
-        <input class="input is-large" type="text" style="display:block mb-auto" id="searching" placeholder="Quel jeu recherches-tu ?" ; /><br /><br />
-        <input class="button is-info" type="submit" id="goSearch" value="Rechercher" />
-      </form>
-  
-    
-    <div class="row stick justify-content-center">
-      <section id="pageContent" class="col stick col-12"></section>
+  <h1 id="pgtitle">The ProGame</h1>
+
+  <form class="flex_col_2 stick_bottom" id="Former">
+    <input class="form-control type="text" style="display:block mb-auto" id="searching" placeholder="Quel jeu recherches-tu ?" ; /><br /><br />
+    <input class="btn btn_input" type="submit" id="goSearch" value="Rechercher" />
+  </form>
+
+</header>
+  <body>
+    <div id="selectdiv">
+    <section id= "selection"></section>
     </div>
+
+
+    <div class="row stick justify-content-center">
+      <section id="pageContent"></section>
+    </div>
+
+    
 
     <footer class="mx-0 p-0 my-3">
       <div class="row">
@@ -25,7 +36,7 @@
       </div>
       <div class="row stick">
         <p class="pt-3">
-          Anthony KRIEF - Fictional Website for exercice
+          Propulsed by THP ~ Anthony KRIEF - Fictional Website for exercice
         </p>
       </div>
     </footer>

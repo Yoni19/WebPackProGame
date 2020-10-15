@@ -1,5 +1,5 @@
 import{DateFormat,noImage,existOrNot,releaseOrNot} from "./helpers";
-import{platformUrl,limitOfShow,limitTotalPerPage,platformLimit,limitPerPage,apiUrl,showBase,specialChars,imageEmpty,time} from "./index";
+import{limitOfShow,apiUrl,showBase,imageEmpty} from "./index";
 
 const ratingInfo = (game) => {
     if (!existOrNot(game.rating)) {
@@ -50,7 +50,7 @@ const showPurchase = (stores) => {
     return `
       <div id="purchase_zone" class="row game_attribute stick">
         <div class="col stick col-12">
-          <h3 class="red_title">BUY</h3>
+          <h3>BUY</h3>
         </div>
         <div id="stores" class="col stick col-12">
           <p>${innerHTML}</p>
@@ -97,7 +97,7 @@ const fetchYoutube = (gameSlug) => {
                    src="https://www.youtube.com/embed/${video.external_id}">
                 </iframe>
                 <p class="white_title">${video.name}</p>
-                <p class="red_title">${video.channel_title} | ${DateFormat(
+                <p>${video.channel_title} | ${DateFormat(
             video.created
           )}</p>
               </div>`;
@@ -123,6 +123,40 @@ const fetchSimilar = (gameId) => {
       });
   };
   
+/*---------------------------------------------------------------------------------------------------------
+
+const platformLogo = (platformName) => {
+  
+        switch(platformName) {
+          case "PC":
+            return `<img src="images/windows.svg"></img>`;
+            break;
+          case "PlayStation":
+          case "PlayStation 2":
+          case "PlayStation 3":
+          case "PlayStation 4":
+          case "PlayStation 5":
+            return `<img src="images/ps4.svg"></img>`;
+            break;
+          case "Xbox":
+          case "Xbox 360":
+          case "Xbox One":
+          case "Xbox Series S/X":
+            return `<img src="images/xbox.svg"></img>`;
+            break;
+          case "iOS":
+            return `<img src="images/mobile.svg"></img>`;
+            break;
+          case "Android":
+            return `<img src="images/android.svg"></img>`;
+            break;
+        }
+      }
+14 h 50
+
+
+
+--------------------------------------------------------------------------------------------------------------*/
   const cardShow = (game) => {
     let text = `<a href="#game/${game.slug || game.id}"><div id="${
       game.slug || game.id

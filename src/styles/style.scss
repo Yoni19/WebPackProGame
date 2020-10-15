@@ -1,0 +1,121 @@
+@import "~bootstrap/scss/bootstrap";
+@import "./header";
+@import './color';
+@import './variable';
+@import './list.scss';
+@import './detailpage.scss';
+@import './cursor.scss';
+@import './weekorall.scss';
+
+
+
+html{
+  color:$principal_color;
+}
+
+header{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  #pgtitle{
+    color:$principal_color;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  #goSearch{
+    float:right;
+  }
+}
+
+#welcome_section{
+  color: whitesmoke;
+}
+
+body {
+  @include no_margin();
+  @include body_settings();
+  min-height: 100vh;
+  background-color: $background; 
+  background-image: url("https://download.hipwallpaper.com/desktop/1920/1080/79/54/LS0q9t.jpg");
+  background-repeat: no-repeat;
+  
+  color: whitesmoke;
+}
+
+a {
+  color:whitesmoke;
+  &:hover,
+  :focus {
+    @include no_decoration();
+    color: whitesmoke;
+  }
+}
+
+input,
+
+p {
+  
+  text-align: justify;
+  @include paragraph_font_size();
+}
+
+.row {
+  @include limit_row_width();
+}
+
+.stick {
+  @include no_margin();
+  padding: 0px;
+}
+
+.flex_col_2 {
+  @include flex_col_2();
+}
+
+.flex_col_4 {
+  @include flex_col_4();
+}
+
+// internal link hover
+a.internal,
+a.internal:visited {
+  @include no_decoration();
+  position: relative;
+  color: whitesmoke;
+
+  &:after {
+    content: "";
+    height: 0.1em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    background: whitesmoke;
+    transition: 0.2s;
+  }
+
+  &:hover:after {
+    width: 100%;
+  }
+
+  &.block {
+    display: block;
+    padding: 0.5em;
+
+    &:hover {
+      background: whitesmoke;
+    }
+  }
+}
+
+.stick_bottom {
+  margin: 2em 0px 0px 0px;
+  padding: 0px;
+}
+
+.btn_input {
+  padding: 0.5em 1em;
+  border: none;
+  background-color: $principal_color;
+  opacity: 1;
+}

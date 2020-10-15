@@ -25,9 +25,9 @@ const existOrNot = (x) => {
 };
 const releaseOrNot = (date) => {
   if (time > date) {
-    return "RELEASED";
+    return "Sorti le ";
   } else {
-    return "TO BE RELEASED";
+    return "Sortira le ";
   }
 };
 

@@ -5,8 +5,9 @@ import{existOrNot} from "./helpers";
 import{Filter} from "./filtration";
 
 const PageList = (argument = "") => {
-  const welcome = `<div id="welcome_section" class="mx-0 my-3 p-0"><h1 id="welcome_title" class="white_title">Bienvenue !</h1><p class="welcome_text">
-  Bienvenue au plus gros evenement mondial consacré au jeux video ! ProGame c'est l'evenement à ne pas raté pour tout savoir sur les dernieres pépites audiovisuels.
+  const welcome = `<div id="welcome_section"><h1 id="welcome_title" class="white_title">Bienvenue !</h1><p class="welcome_text">
+  Bienvenue au plus gros evenement mondial consacré au jeux video ! ProGame c'est l'evenement à ne pas rater pour tout savoir sur les 
+  dernieres pépites !
   Echange avec des passionnés sur les derniers jeux !
   </p></div>`;
  
@@ -58,10 +59,11 @@ const PageList = (argument = "") => {
 
           document.querySelector(".page-list .articles").innerHTML = `
             ${welcome}
-            <div class="row stick_bottom justify-content-center">
+            <div class="platform">
               <select id="platform_filter" class="btn btn_input my-4">
               </select>
             </div>
+            <br>
             <div id="game_gallery" class="row justify-content-center">
               ${justNine(0, result)}
             </div>
@@ -111,4 +113,4 @@ const PageList = (argument = "") => {
   render();
 };
 
-  export {PageList}; 
+  export {PageList};

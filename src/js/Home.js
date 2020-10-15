@@ -1,5 +1,5 @@
 const Home = (argument = "") => {
-    console.log("Home", argument);
+  window.location.href = argument
   };
 
 

@@ -11,7 +11,8 @@
   "author": "Anthony KRIEF",
   "license": "ISC",
   "devDependencies": {
-    "dotenv-webpack": "^1.7.0"
+    "dotenv-webpack": "^1.7.0",
+    "file-loader": "^6.1.1"
   },
   "dependencies": {
     "@babel/core": "^7.9.0",
@@ -23,7 +24,6 @@
     "bootstrap": "^4.4.1",
     "css-loader": "^3.5.3",
     "debug": "^4.1.1",
-    "file-loader": "^6.0.0",
     "jquery": "^3.5.0",
     "lodash": "^4.17.15",
     "masonry-layout": "^4.2.2",

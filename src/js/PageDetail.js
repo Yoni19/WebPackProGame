@@ -1,15 +1,7 @@
 import { noImage } from "./helpers";
 import { observerAnimation,backToTop} from "./animation";
 import { apiUrl, imageEmpty, contentZone,} from "./index";
-import {
-  showSameCategory,
-  showPlatforms,
-  showPurchase,
-  ratingInfo,
-  fetchImages,
-  fetchYoutube,
-  fetchSimilar,
-} from "./gameInfo";
+import {showSameCategory,showPlatforms,showPurchase,ratingInfo,fetchImages,fetchYoutube,fetchSimilar,} from "./gameInfo";
 
 const PageDetail = (argument) => {
   const preparePage = () => {
@@ -50,11 +42,11 @@ const PageDetail = (argument) => {
                 </div>
                 <div class="row m-0 p-0 justify-content-between">
                   <h1 class="title white_title align_to_bottom">${name}</h1>
-                  <p id="rating" class="red_title">${ratingInfo(game)}</p>
+                  <p id="rating" ">${ratingInfo(game)}</p>
                 </div>
                 <div class="row stick"><p>${reddit_description}</p></div> 
                 <div class="row stick">
-                  <h5 class="col stick_bottom col-12 white_title">Plot</h5></div>
+                  <h5 class="col stick_bottom col-12 white_title">Description</h5></div>
                   <p class="col stick col-12">${description}</p>
                 </div>
                 <div class="row stick justify-content-center">
@@ -88,7 +80,7 @@ const PageDetail = (argument) => {
               ${showPurchase(stores)}
                 <div id="trailer_zone" class="row game_attribute stick" >
                   <div class="col stick col-12">
-                    <h3 class="red_title">TRAILER</h3>
+                    <h3 ">TRAILER</h3>
                   </div>
                   <div id="trailer" class="col stick col-12">
                     <p></p>
@@ -96,17 +88,17 @@ const PageDetail = (argument) => {
                 </div>
                 <div id="screenshots" class="row game_attribute stick justify-content-center">
                   <div class="col stick col-12">
-                    <h3 class="red_title">SCREENSHOTS</h3>
+                    <h3 ">SCREENSHOTS</h3>
                   </div>
                 </div>
                 <div id="youtube" class="row game_attribute stick justify-content-center">
                   <div class="col stick col-12">
-                    <h3 class="red_title">YOUTUBE</h3>
+                    <h3 ">YOUTUBE</h3>
                   </div>
                 </div>
                 <div id="similar" class="row game_attribute stick justify-content-center">
                   <div class="col stick col-12">
-                    <h3 class="red_title">SIMILAR GAMES</h3>
+                    <h3 ">SIMILAR GAMES</h3>
                   </div>
                 </div>
               </div>

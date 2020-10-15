@@ -1,0 +1,38 @@
+@import "./variable";
+@import "./color";
+
+
+.form-control {
+  width: 100%;
+  color:whitesmoke;
+  border-radius: 25px !important;
+  background-color: transparent !important;
+  border: 2px solid whitesmoke;
+  height: 50px !important;
+}
+
+#search_form div {
+ color:whitesmoke;
+  display: flex;
+  flex-direction: row;
+
+  @media (min-width: $lg-min) {
+    #search_submit {
+      display: none;
+    }
+  }
+  @media (max-width: $md-max) {
+    #search_submit {
+      width: 10em;
+      margin-left: -25px;
+      border: 2px solid whitesmoke;
+      border-left: none;
+    }
+  }
+}
+// footer separator
+#separator {
+  height: $separator_height;
+  width: $separator_width;
+  background-color: $principal_color;
+}
